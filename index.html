@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>流量卡问题自助提交</title>
+    <style type="text/css">
+
+.feedback{
+  /*定义表单整体的宽带以及边框样式等*/
+  width:600px;
+  padding:1px;
+  border:1px solid #e8e8e8;
+  background-color:#ffffff;
+
+}
+.feedback{/*定义表单内部的所有元素补白、外补白以及文字的相关样式*/
+  margin:0;
+  padding:0;
+  font:normal 12px/1.5en "宋体" ，verdana,lucida,Arial,Helvetica,sans-serif;
+
+}
+.feedback h3 {/*定义表单标题的高度、文字样式以及背景颜色等*/
+height:24px;
+line-height:24px;
+font-weight:bold;
+font-size:20px;
+tet-indent:12px;
+color:#ffffff;
+background-color:#999999;
+}
+.feedback .content{/*表单内容区域增加10px的左右补白，使其与表单外框产生间距*/
+  padding: 0 10px;
+
+}
+.feedback fieldset{
+  padding-top: 12px;
+  margin-top: 10px;
+  border: 0 none;
+  border-top: 1px solid #999999;
+}
+.feedback legend{
+  padding: 0 5px;
+  color: #333333;
+}
+.feedback .frm_cont{
+  margin-top: 8px;
+}
+.feedback label{
+  float: left;
+  width: 80px;
+  height: 22px;
+  line-height: 24px;
+  text-align: right;
+  color: #ABABAB;
+  cursor: pointer;
+}
+.feedback .base_info input{
+  width: 200px;
+  height: 17px;
+  padding: 3px 2px 0;
+  border: 1px solid #DEDEDE;
+}
+.feedback .email input {
+  width: 150px;   /**/
+}
+.feedback .url input{
+  width: 240px;
+}
+.feedback .up_file input{
+  width: auto;
+  height: auto;
+}
+.feedback .tips{
+  padding: 5px 0  0 80px;
+  color: #ff3260;
+}
+.feedback textarea{
+  width: 240px;
+  height: 66px;
+  padding-left: 2px;
+  border: 1px solid #DEDEDE;
+
+}
+.feedback .btns{
+  padding: 5px 0;
+  text-align: center;
+}
+.feedback .btns button{
+  height: 22px;
+  margin: 0 5px;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="feedback">
+      <h3>问题提交</h3>
+      <div class="content">
+        <form  method="post" action="">
+          <fieldset class="base_info">
+            <legend>卡种类提交</legend>
+            <div class="frm_cont userName" ><label for="userName">卡种类：</label>
+              <input type="text" value="" id="userName" />  </div>
+              <div class="frm_cont email" ><label for="email">填写卡号：</label>
+                <input type="text" value="89开头" id="email" />  </div>
+                <div class="frm_cont url" ><label for="url">填写微信：</label>
+                  <input type="text" value="九乐微信759267767" id="url" />  </div>
+          </fieldset>
+<fieldset>
+  <legend>描述问题：</legend>
+  <div class="frm_cont up_file">
+    <label for="up_file">问题图片：</label><input type="file" id="up_file">
+    <p class="tips">本系统只支持上次.jpg，.png, .gif</p>
+    </div>
+    <div class="frm_cont msg">
+      <label for="msg">问题内容：</label><textarea name="name" rows="4" cols="40" id="msg"></textarea>
+      <p class="tips">请输入内容!</p>
+    </div>
+</fieldset>
+<div class="btns">
+  <button type="submit">提交</button>
+  <button type="reset">重置</button>
+
+</div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
